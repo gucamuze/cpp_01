@@ -6,7 +6,7 @@
 /*   By: gucamuze <gucamuze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 11:48:20 by gucamuze          #+#    #+#             */
-/*   Updated: 2022/07/26 05:51:41 by gucamuze         ###   ########.fr       */
+/*   Updated: 2022/07/26 05:54:34 by gucamuze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ int main( int ac, char **av )
 
 	inputStream.open(in_filename.c_str());
 	if (inputStream.fail()) {
-		std::cout << "Error while creating output file " << out_filename << std::endl;
+		std::cout << "Error while opening input file " << in_filename << std::endl;
 		return 0;
 	}
 	out_filename+=".replace";
 	outputStream.open(out_filename.c_str());
 	if (outputStream.fail()) {
-		std::cout << "Error while opening input file " << in_filename << std::endl;
+		std::cout << "Error while creating output file " << out_filename << std::endl;
 		return 0;
 	}
 	
