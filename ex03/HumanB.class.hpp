@@ -6,7 +6,7 @@
 /*   By: gucamuze <gucamuze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 15:32:21 by gucamuze          #+#    #+#             */
-/*   Updated: 2022/07/20 15:56:54 by gucamuze         ###   ########.fr       */
+/*   Updated: 2022/07/21 11:42:07 by gucamuze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,14 @@
 #include "Weapon.class.hpp"
 
 class HumanB {
-
+	private:
+		Weapon	*	_weapon;
+		std::string	_name;
+		
+	public:
+					HumanB( std::string name);
+		void		attack( void );
+		void		setWeapon( Weapon &newWeapon );
 };
 
 #endif

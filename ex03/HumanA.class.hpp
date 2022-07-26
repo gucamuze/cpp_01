@@ -6,7 +6,7 @@
 /*   By: gucamuze <gucamuze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 15:32:13 by gucamuze          #+#    #+#             */
-/*   Updated: 2022/07/20 16:04:12 by gucamuze         ###   ########.fr       */
+/*   Updated: 2022/07/21 11:42:13 by gucamuze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,12 @@
 
 class HumanA {
 	private:
-		Weapon	&	_weapon;
+		Weapon	*	_weapon;
 		std::string	_name;
+		
 	public:
-		HumanA( std::string name, Weapon weapon );
-		void	attack( void );
+					HumanA( std::string name, Weapon &weapon );
+		void		attack( void );
 };
 
 #endif
