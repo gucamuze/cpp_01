@@ -1,10 +1,10 @@
-NAME = hiThisIsBrain
+NAME = harlFilter
 
 CC = c++
 
-CPPFLAGS = -Wall -Wextra -Werror -MMD -std=c++98
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD
 
-SRC = main.cpp
+SRC = main.cpp Harl.class.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
@@ -28,4 +28,4 @@ fclean : clean
 
 re : fclean all
 
-.PHONY : all clean fclean re .cpp.oNAME = hiThisIsBrain
+.PHONY : all clean fclean re .cpp.o
